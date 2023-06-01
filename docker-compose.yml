@@ -1,0 +1,12 @@
+
+version: '2.0'
+
+services:
+    Website1:
+        image: ghcr.io/ariaohg/stolavtest:latest #change samoht89 to your username and website1 to your respitory name
+        deploy:
+        labels: [com.centurylinklabs.watchtower.enable=true]
+        container_name: ariana #Your firstname-"usernameAtSchool"
+        restart: always
+        ports:
+            - "80:80" #Change first port if using nginx
